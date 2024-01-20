@@ -1,0 +1,152 @@
+* {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.logo{
+  color: #fff;
+  min-width: 200px;
+}
+
+.logo > a {
+  color: inherit;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #2D3250;
+}
+
+.navbar__link {
+  color: #fff;
+  display: inline-block;
+  padding: 20px 25px;
+}
+
+.navbar__item:hover {
+  background-color: #7077A1;
+}
+
+.navbar__mobile {
+  display: none;
+}
+
+.navbar__desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar__primary,
+.navbar__secondary {
+  display: flex;
+}
+
+.navbar__secondary--mini {
+  display: none;
+}
+
+/* TABLET SIZE */
+@media (max-width: 863px) {
+  
+  .logo {
+    min-width:100px;
+  }
+
+  .navbar__secondary {
+    display: none;
+  }
+
+  .navbar__secondary--mini {
+    display: initial;
+  }
+
+  .navbar__submenu {
+    display: none;
+    position:absolute;
+    text-align: center;
+    width: 90px;
+    background-color: #2D3250;
+  }
+
+  .navbar__secondary--mini:hover  .navbar__submenu {
+    display: block;
+  }
+
+}
+
+/* MOBILE */
+@media (max-width: 520px) {
+
+  .navbar__desktop {
+    display: none;
+  }
+
+  .navbar__item {
+    text-align: center;
+  }
+
+  .navbar__mobile {
+    display: initial;
+  }
+
+  .navbar__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .navbar__hamburger {
+    position: relative;
+    width: 32px;
+    height: 4px;
+    background-color: white;
+    border-radius: 5px;
+  }
+
+  .navbar__hamburger::before,
+  .navbar__hamburger::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 5px;
+  }
+
+  .navbar__hamburger::before {
+    bottom: 8px;
+  }
+
+  .navbar__hamburger::after {
+    top: 8px;
+  }
+
+  .navbar__more{
+    border: none;
+    padding: 20px 11px;
+    cursor: pointer;
+  }
+
+  .navbar__links {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #2D3250;
+    transform: translate(-100%);
+    transition: transform .5s ease;
+  }
+
+  .navbar__links.active {
+    transform: translate(0);
+  }
+
+  
+}
