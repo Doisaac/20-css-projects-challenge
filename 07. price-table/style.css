@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #3B3486;
+}
+
+.price-table-container {
+  width: 900px;
+  margin: 100px auto;
+  display: flex;
+  align-items: center;
+}
+
+.table {
+  width: 300px;
+  height: 442px;
+  padding: 30px;
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.table:first-child {
+  border-radius: 10px 0 0 10px;
+}
+
+.table:last-child {
+  border-radius: 0 10px 10px 0;
+}
+
+.table--recommended {
+  height: 500px;
+  border-radius: 10px;
+  padding: 50px 30px 60px 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+  z-index: 1;
+}
+
+.table__title {
+  font-size: 20px;
+  text-align: center;
+}
+
+.table__price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.table__currency {
+  font-size: 25px;
+}
+
+.table__number {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.table__frequency {
+  color: #999;
+}
+
+.features {
+  flex: 1;
+}
+
+.features__list {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.features__list li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.features__list li span.features__circle {
+  color: rgb(39, 196, 143);
+}
+
+.btn {
+  display: block;
+  text-align: center;
+  padding: 20px 0;
+  border: 1px solid #999;
+  text-decoration: none;
+  color: #999;
+  border-radius: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #2579e7;
+    color: #fff;
+  }
+}
+
+.btn.btn--recommended {
+  background-color: #2579e7;
+  color: #fff;
+  border: 1px solid #2579e7;
+
+  &:hover {
+    background-color: #1961be;
+    border-color: #1961be;
+  }
+}
