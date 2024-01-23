@@ -1,0 +1,79 @@
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ body {
+   font-family: Arial, Helvetica, sans-serif;
+   padding: 100px;
+ }
+
+.checkbox-container {
+  display: block;
+  position: relative;
+
+  padding-left: 35px;
+  margin-bottom: 12px;
+  
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+
+}
+
+.checkbox-container input {
+  position: absolute;
+  display: none;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  border-radius: 3px;
+  color: #eee;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-color: #eee;
+  transition: all .3s ease-in-out;
+}
+
+.checkmark__item {
+  scale: 0;
+  transition: scale .5s ease;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+.checkbox-container input:checked + .checkmark .checkmark__item {
+  scale: 1.1;
+  color: #fff;
+}
+
+/* RADIO BUTTON */
+.checkbox-container input:checked ~ .checkmark.radio .circle {
+  position: absolute;
+  border-radius: 50%;
+  inset: 0;
+  margin: auto;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  transition: all .5s ease-in-out;
+}
+
+.checkmark.radio{
+  position: absolute;
+  border-radius: 50%;
+  color: #eee;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-color: #eee;
+  transition: all .3s ease-in-out;
+}
