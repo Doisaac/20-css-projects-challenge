@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload Files UI</title>
+  <!-- GOOGLE ICONS -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="upload">
+
+      <div class="upload__title">UPLOAD FILES</div>
+
+      <div class="upload__description">
+        Upload the files you want to share with your team
+      </div>
+
+      <div class="drag-drop">
+        <div class="drag-drop__icon">
+          <span class="material-symbols-outlined">
+            cloud_upload
+          </span>
+        </div>
+        <div>
+          Drag and Drop the files here <br />
+          Or
+        </div>
+        <button class="drag-drop__btn">Browse Files</button>
+      </div>
+
+
+      <div class="upload__title-section">UPLOADED FILES</div>
+
+      <div class="uploaded-files">
+
+        <div class="file">
+          <div class="file__icon"><img src="word-icon.png" alt=""></div>
+          <div class="file__title">
+            <div class="file__name">Important Document</div>
+            <div class="file__progress">
+              <div class="file__progress-bar"></div>
+            </div>
+          </div>
+          <div class="actions">
+            <button class="actions__btn"><span class="material-symbols-outlined">
+              close
+              </span></button>
+          </div>
+        </div>
+
+        <div class="file">
+          <div class="file__icon"><img src="pdf-icon.png" alt=""></div>
+          <div class="file__title">
+            <div class="file__name">Important Document</div>
+            <div class="file__size">60 kb</div>
+          </div>
+          <div class="actions">
+            <button class="actions__btn"><span class="material-symbols-outlined">
+              close
+              </span></button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
