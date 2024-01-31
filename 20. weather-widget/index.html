@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Widget</title>
+  <!--GOOGLE FONTS-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <!--CURRENT WEATHER-->
+    <div class="current">
+      <div class="current__city">El Salvador</div>
+      <div class="current__day">Monday</div>
+      <div class="current__day">Monday</div>
+
+      <div class="current__row">
+        <div class="current__icon">
+          <img src="cloudy.png" width="128" alt="">
+        </div>
+
+        <div class="current__info">
+          <div class="temperature">
+            <div class="temperature__now">20°</div>
+            <div class="temperature__low">/15°</div>
+          </div>
+
+          <div class="status">Partially Cloudy</div>
+        </div>
+      </div>
+
+
+      <div class="current__more">
+        <!--ITEM-->
+        <div class="item">
+          <div class="item__icon">
+            <span class="material-symbols-outlined">
+              air
+            </span>
+          </div>
+          <div class="text">
+            <div class="text__value">9 km/h</div>
+            <div class="text__type">Wind</div>
+          </div>
+        </div>
+
+        <!--ITEM-->
+        <div class="item">
+          <div class="item__icon">
+            <span class="material-symbols-outlined">
+              water_drop
+            </span>
+          </div>
+          <div class="text">
+            <div class="text__value">93%</div>
+            <div class="text__type">Changes of rain</div>
+          </div>
+        </div>
+
+        <!--ITEM-->
+        <div class="item">
+          <div class="item__icon">
+            <span class="material-symbols-outlined">
+              water
+            </span>
+          </div>
+          <div class="text">
+            <div class="text__value">31%</div>
+            <div class="text__type">Humitity</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!--NEXT DAYS-->
+    <div class="list">
+      <!--DAY-->
+      <div class="list__day">
+        <div class="list__day-name">Mon</div>
+
+        <div class="list__weather">
+          <span class="material-symbols-outlined">
+            cloud
+          </span>
+          <div class="list__status">Cloudy</div>
+        </div>
+
+        <div class="list__temperature">
+          <div class="list__temperature-high">20°</div>
+          <div class="list__temperature-low">10°</div>
+        </div>
+      </div>
+
+
+      <!--DAY-->
+      <div class="list__day">
+        <div class="list__day-name">Tue</div>
+
+        <div class="list__weather">
+          <span class="material-symbols-outlined">
+            ac_unit
+          </span>
+          <div class="list__status">Snowy</div>
+        </div>
+
+        <div class="list__temperature">
+          <div class="list__temperature-high">20°</div>
+          <div class="list__temperature-low">10°</div>
+        </div>
+      </div>
+
+
+      <!--DAY-->
+      <div class="list__day">
+        <div class="list__day-name">Wed</div>
+
+        <div class="list__weather">
+          <span class="material-symbols-outlined">
+            thunderstorm
+          </span>
+          <div class="list__status">thunderstorm</div>
+        </div>
+
+        <div class="list__temperature">
+          <div class="list__temperature-high">20°</div>
+          <div class="list__temperature-low">10°</div>
+        </div>
+      </div>
+
+
+      <!--DAY-->
+      <div class="list__day">
+        <div class="list__day-name">Thur</div>
+
+        <div class="list__weather">
+          <span class="material-symbols-outlined">
+            wb_twilight
+          </span>
+          <div class="list__status">Partially Sunny</div>
+        </div>
+
+        <div class="list__temperature">
+          <div class="list__temperature-high">20°</div>
+          <div class="list__temperature-low">10°</div>
+        </div>
+
+      </div>
+
+      <!--DAY-->
+      <div class="list__day">
+        <div class="list__day-name">Fri</div>
+
+        <div class="list__weather">
+          <span class="material-symbols-outlined">
+            wb_sunny
+          </span>
+          <div class="list__status">Sunny</div>
+        </div>
+        
+        <div class="list__temperature">
+          <div class="list__temperature-high">25°</div>
+          <div class="list__temperature-low">15°</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>

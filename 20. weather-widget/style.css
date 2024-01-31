@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* MATERIAL ICON STYLES */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.container {
+  width: 450px;
+  margin: 100px auto;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.current {
+  background: rgb(30, 107, 221);
+  background: linear-gradient(
+    to top right, rgb(30,107,221) 0%,
+    rgb(3,116,255) 42%,
+    rgb(3,191,255) 100%
+  );
+  border-radius: 40px;
+  padding: 40px;
+}
+
+.current__city {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.current__day {
+  text-align: center;
+}
+
+.current__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.current_icon img {
+  width: 128px;
+}
+
+.temperature {
+ font-weight: bolder; 
+ display: flex;
+ align-items: center;
+}
+
+.temperature__now {
+  font-size: 80px;
+}
+
+.temperature__low {
+  font-size: 32px;
+  color: rgba(255, 255, 255, .7);
+}
+
+.status {
+  text-align: center;
+}
+
+.current__more {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.item__icon span {
+  color: rgba(255, 255, 255, .7);
+  font-size: 28px;
+}
+
+.text__type {
+  color: rgba(255, 255, 255, .7);
+  font-size: 12px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 40px;
+}
+
+.list__day {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list__day-name {
+  text-align: left;
+  flex-basis: 10%;
+}
+
+.list__temperature {
+  flex-basis: 10%;
+}
+
+.list__weather {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 80%;
+}
+
+.list__status {
+  color: rgba(255, 255, 255, .5)
+}
+
+.list__temperature {
+  display:flex;
+  text-align: right;
+  gap: 5px;
+}
+
+.list__temperature-low {
+  color: rgba(255, 255, 255, .5)
+}
